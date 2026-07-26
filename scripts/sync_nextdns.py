@@ -50,9 +50,10 @@ def add_domain(domain):
     )
 
     payload = {
-        "domain": domain
+        "id": domain
     }
-
+   # print(url)
+   # print(payload)
     r = requests.post(
         url,
         headers={
@@ -84,7 +85,7 @@ def main():
     existing = get_existing()
 
     current = {
-        x["domain"]
+        x["id"]
         for x in existing.get(
             "data",
             []
