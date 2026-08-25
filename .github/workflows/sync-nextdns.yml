@@ -3,7 +3,7 @@ name: Sync NextDNS Denylist
 on:
 
   schedule:
-    - cron: "0 4 * * *"
+    - cron: "0 4 5 * *"
 
   workflow_dispatch:
 
